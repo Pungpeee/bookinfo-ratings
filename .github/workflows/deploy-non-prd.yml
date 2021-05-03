@@ -2,8 +2,7 @@ name: deploy-non-prd
 on:
   push:
     branches:
-      - dev
-      - master    
+      - dev  
   env: ${{ env.ENV_NAME }}        
 jobs:
   build:

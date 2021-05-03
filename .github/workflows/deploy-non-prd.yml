@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - dev
-      - master      
+      - master    
+  env: ${{ env.ENV_NAME }}        
 jobs:
   build:
     runs-on: ubuntu-20.04

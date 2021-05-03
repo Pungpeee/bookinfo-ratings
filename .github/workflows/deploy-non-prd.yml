@@ -4,7 +4,8 @@ on:
     branches:
       - dev
       - main
-  env: ${{ env.ENV_NAME }}        
+  env: 
+    ENV_NAME: ${{ env.ENV_NAME }}        
 jobs:
   build:
     runs-on: ubuntu-20.04
